@@ -5,7 +5,7 @@
 
 // 23432 -> да
 
-int Palindrom()
+void Palindrom()
 {
 Console.Write("Введите целое пятизначное число, ");
  int i= Convert.ToInt32( Console.ReadLine()  );
@@ -18,18 +18,18 @@ if ( i>0 && i<100000)
         }
     else 
         {
-            Console.WriteLine(Palindrom);
+            Console.WriteLine("Нет");
         }
 }
 else
 {
     Console.Write("Надо вводить только положительные пятизначные числа");
 }
-}
+}  
 
 try
 {
-    Console.WriteLine();
+    Palindrom();
 }
 catch
 {
@@ -37,25 +37,3 @@ catch
 }
 
 
-
-
-
-
-// Console.Write("Введите целое пятизначное число, ");
-//  int i= Convert.ToInt32( Console.ReadLine()  );
-// if ( i>0 && i<100000)
-// {
-//     if ( i /10000 == i % 10 && i/1000%10 == i/10%10) 
-//     {
-//     Console.Write("Да");
-//     }
-//     else 
-//         {
-//         Console.Write("Нет");
-//         }
-// }
-// else
-// {
-//     Console.Write("Введите пятизначное чиисло!");
-
-// }
